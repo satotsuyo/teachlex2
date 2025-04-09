@@ -49,7 +49,7 @@ dataframes = {key: load_data(url) for key, url in CSV_URLS.items()}
 
 st.title("TeachLex Scope")
 st.markdown("""<p style="font-size:16px;">●小学校から高等学校の英語の教科書における使用状況をお知らせします。</p>""", unsafe_allow_html=True)
-st.markdown("""<p style="font-size:16px;">●頻度はAverage Reduced Frequency,初出の学年はその単語が初めて出現する学年を示します。</p>""", unsafe_allow_html=True)
+st.markdown("""<p style="font-size:16px;">●「頻度」はAverage Reduced Frequency（ARF)，「初出の学年」はその単語が初めて出現する学年を示します。</p>""", unsafe_allow_html=True)
 st.markdown("""<p style="font-size:16px;">●ワードクラウドは入力した単語の前後3語に出現する語の頻度情報から作られています。</p>""", unsafe_allow_html=True)
 
 word = st.text_input("単語を入力してください", "")
